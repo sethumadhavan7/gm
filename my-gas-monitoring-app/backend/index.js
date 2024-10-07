@@ -1,17 +1,17 @@
-const express = require('express');
+const express = require('express'); 
 const cors = require('cors');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 
 const app = express();
-dotenv.config();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
+// MongoDB connection (Direct connection without dotenv)
+const mongoUri = 'mongodb+srv://sethu:1234@cluster0.dbntwx8.mongodb.net/gasmonitoring?retryWrites=true&w=majority&appName=Cluster0';
+
+mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
