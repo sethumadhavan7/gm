@@ -17,7 +17,7 @@ function App() {
   const fetchSensorData = async () => {
     try {
       setLoading(true); // Start loading
-      const response = await axios.get('http://localhost:5000/api/gas-data'); // Updated API URL
+      const response = await axios.get('https://gm-api-delta.vercel.app/api/gas-data'); // Updated API URL
       const data = response.data;
 
       // Log the fetched data to check its structure
