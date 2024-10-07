@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.data-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.data-item p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.alert {
+  font-weight: bold;
+}
+
+.alert-high {
+  color: red;
+}
+
+.alert-normal {
+  color: green;
+}
+
+.chart-container {
+  margin-top: 10px;
+  height: 150px;
+  width: 100%;
+}
+
+/* Custom styling for charts */
+canvas {
+  max-width: 100%;
+}
